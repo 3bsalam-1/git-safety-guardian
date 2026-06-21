@@ -1,5 +1,7 @@
 # Git Safety Guardian
 
+[![skills.sh](https://skills.sh/b/3bsalam-1/git-safety-guardian)](https://skills.sh/3bsalam-1/git-safety-guardian)
+
 A Claude skill that puts a human-approval gate in front of every
 repository-changing git operation. It exists to stop accidental or
 unauthorized commits, pushes, merges, rebases, force-pushes, branch deletions,
@@ -28,9 +30,22 @@ confirmation for protection against mistakes the human pays for.
 
 ## Install
 
-Copy the `git-safety-guardian/` folder into your Claude skills directory, or
-install the packaged `.skill` file. The skill activates automatically whenever a
-git write operation is imminent.
+Install with the [skills](https://skills.sh) CLI (works for Claude Code and
+other supported agents):
+
+```sh
+npx skills add 3bsalam-1/git-safety-guardian
+```
+
+Or, to install globally for all your projects:
+
+```sh
+npx skills add 3bsalam-1/git-safety-guardian --global
+```
+
+Prefer to do it by hand? Copy the `git-safety-guardian/` folder into your Claude
+skills directory. Either way, the skill activates automatically whenever a git
+write operation is imminent.
 
 ## Contents
 
